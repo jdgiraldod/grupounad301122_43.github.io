@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelos</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="contenidos">
+      
+       <header>
+            <div id="apDiv1">
+                <img src="img/banner.jpg" width="1000" height="168">
+                <div id="apDiv2">OVA INTRODUCCION PARA EL DESARROLLO DE SOFTWARE </div>
+            </div>
+            
+            <div id="apDiv14"><a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank"><img src="img/campus.png" width="116" height="101"></a>
+            </div>
+       </header>
+       
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="menu">Inicio</a></li>
+                <li><a href="lecturas.html" class="menu">Lecturas</a>
+                    <ul>
+                       <li><a href="capitulo1.html" class="menu">Capitulo 1</a></li> 
+                       <li><a href="capitulo2.html" class="menu">Capitulo 2</a></li>
+                       <li><a href="capitulo3.html" class="menu">Capitulo 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="multimedia.html" class="menu">Multimedia</a></li>
+                <li><a href="actividades.html" class="menu">Actividades</a></li>
+                <li><a href="autores.html" class="menu">Autores</a></li>
+            </ul>
+            
+            <div id="apDiv19">
+            <center>
+                <div id="cuentavisitas"></div>
+                <script>yu=function(id){return document.getElementById(id);}
+                    if(localStorage){
+                    if(localStorage['visitas']==undefined){
+                    localStorage['visitas']=0;
+                    }var n=parseInt(localStorage['visitas']);localStorage['visitas']=1+n;
+                    var num=localStorage['visitas'];
+                    var mensaje=num + " visitas";
+                    yu('cuentavisitas').innerHTML=mensaje;}
+                </script>
+            </center>
+            </div>
+        
+            <div id="apDiv4">
+                <a target="_blank" rel="nofollow" href="https://www.facebook.com/Universidad-Nacional-Abierta-y-a-Distancia-UNAD-285790428108305/"><img title="Facebook" border="0" src="img/facebook_aqu_32.png" alt="Facebook"/></a>
+                <a target="_blank" rel="nofollow" href="https://www.youtube.com/user/universidadunad"><img title="YouTube" border="0" src="img/youtube.png" alt="YouTube"/></a>
+                <a target="_blank" rel="nofollow" href="https://twitter.com/UniversidadUNAD"><img title="Twitter" border="0" src="img/twitter_aqu_32.png" alt="Twitter"/></a>
+            </div>
+        
+            <div id="apDiv3">    
+                <form method="get" action="http://www.google.es/search">
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="oe" value="UTF-8" />
+                    <input type="text" id="s" name="q" value="" size="12" />
+                    <font size=-1>
+                    <input type="submit"  id="x" name="btnG" value="Buscar" />
+                    <input type="hidden" name="domains" value="https://estudios.unad.edu.co/ingenieria-de-sistemas" />
+                    <br />
+                    <input type="radio" name="sitesearch" value="" />
+                    <font color="white"> Internet</font>
+                    <input type="radio" name="sitesearch" value="https://estudios.unad.edu.co/ingenieria-de-sistemas" checked="checked" />
+                    <font color="white"> ECBTI </font>
+                </form>
+            </div>
+            
+            <div id="apDiv20"><a href="https://informacion.unad.edu.co/correo" target="_blank"><img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" border="0" /></a></div>
+        </nav>
+            
+        <section>
+            <h2>Capítulo 3. Modelos de Proceso de Software</h2>
+            <p>Es importante incorporar estrategias de desarrollo que acompañe al proceso, métodos y a las herramientas.
+            <p>Una estrategia a menudo se llama <em>modelo de proceso o paradigma de ingeniería del software</em>. Se selecciona un modelo de proceso para la ingeniería del software según la naturaleza del proyecto y de la aplicación, los métodos y las herramientas a utilizarse, y los controles y entregas que se requieren.
+            <p>Sommerville [1] define modelo de proceso de software como "Una representación simplificada de un proceso de software, representada desde una perspectiva específica. Por su naturaleza los modelos son simplificados, por lo tanto, un modelo de procesos del software es una abstracción de un proceso real."
+            <p>Los modelos genéricos no son descripciones definitivas de procesos de software; sin embargo, son abstracciones útiles que pueden ser utilizadas para explicar diferentes enfoques del desarrollo de software.            
+            <p>[1] Sommerville, I., Ingeniería de Software, Pearson Educación, 2002.
+            
+            <h3>Codificar y Corregir (Code-and-Fix)</h3>
+            <p>Este es el modelo básico utilizado en los inicios del desarrollo de software. Contiene dos pasos:
+            <p style="padding-left:25px;">
+            •Escribir código.<br>
+            •Corregir problemas en el código.</p>
+            <p>Se trata de primero implementar algo de código y luego pensar acerca de requisitos, diseño, validación, y mantenimiento.
+            <p>Este modelo tiene tres problemas principales:
+            <p style="padding-left:25px;">
+            •Después de un número de correcciones, el código puede tener una muy mala estructura, hace que los arreglos sean muy costosos.<br>
+            •Frecuentemente, aún el software bien diseñado, no se ajusta a las necesidades del usuario, por lo que es rechazado o su reconstrucción es muy cara.<br>
+            •El código es difícil de reparar por su pobre preparación para probar y modificar.
+            </p>
+            
+            <h3>El Modelo Lineal Secuencial</h3>
+            <p>Llamado algunas veces "ciclo de vida básico" o "modelo en cascada", el modelo lineal secuencial sugiere un enfoque sistemático, secuencial, para el desarrollo del software que comienza en un nivel de sistemas y progresa con el análisis, diseño, codificación, pruebas y mantenimiento.
+            <p>Es un ciclo de vida en sentido amplio, que incluye no sólo las etapas de ingeniería sino toda la vida del producto: las pruebas, el uso (la vida útil del software) y el mantenimiento. </p>
+            <img src="img/model_lineal.jpg" alt="Modelo Lineal Secuencial">
+            <p><strong>Ingeniería del Sistema:</strong> Análisis de las características y el comportamiento del sistema del cual el software va a formar parte.
+            <p>Para un sistema nuevo: Se debe analizar cuáles son los requisitos funciones del sistema, y luego asignar un subconjunto de estos requisitos y funciones al software.
+            <p>Para un sistema ya existente: se debe analizar el funcionamiento de la organización y sus operaciones y se asigna al software aquellas funciones que se van a automatizar.
+            <p>Está formado por diagramas y por descripciones en lenguaje natural.
+            <p><strong>Análisis:</strong> Se debe comprender cuáles son los datos que se van a manejar, cuál va a ser la función que tiene que cumplir el software, cuáles son las interfaces requeridas y cuál es el rendimiento y otros requisitos no funcionales que se esperan lograr.
+            <p>Los requisitos, tanto del sistema como del software deben documentarse y revisarse con el cliente. Como resultado de la fase de análisis, se obtiene la especificación de requisitos del software.
+            <p>También está formado por diagramas y descripciones en lenguaje natural.
+            <p><strong>Diseño:</strong> El diseño se aplica a cuatro características distintas del software: la estructura de los datos, la arquitectura de las aplicaciones, la estructura interna de los programas y las interfaces.
+            <p>El diseño es el proceso que traduce los requisitos en una representación del software de forma que pueda conocerse la arquitectura, funcionalidad e incluso la calidad del mismo antes de comenzar la codificación.
+            <p>En el diseño, los requisitos del software se traducen a una serie de diagramas que representan la estructura del sistema software, de sus datos, de sus programas y de sus interfaces.
+            <p><strong>Codificación:</strong> Consiste en la traducción del diseño a un formato que sea comprensible para la máquina. Si el diseño es lo suficientemente detallado, la codificación es relativamente sencilla, y puede hacerse de forma automática, usando generadores de código.
+            <p>Se traducen los diagramas de diseño a un lenguaje fuente, que luego se traduce - se compila - para obtener un programa ejecutable.
+            <p><strong>Prueba:</strong> El objetivo es comprobar que no se hayan producido errores en alguna de las fases anteriores, especialmente en la codificación. Se deben probar todas las sentencias, y todos los módulos que forman parte del sistema.
+            <p><strong>Utilización:</strong> El software se entrega al cliente y comienza la vida útil del mismo.
+            <p><strong>Mantenimiento:</strong> El software sufrirá cambios a lo largo de su vida útil. Estos cambios pueden ser debidos a tres causas:
+            <p style="padding-left:25px;">
+            •Que, durante la utilización, el cliente detecte errores en el software: los errores latentes. <br>
+            •Que se produzcan cambios en alguno de los componentes del sistema. <br>
+            •Que el cliente requiera modificaciones funcionales no contempladas en el proyecto.</p>
+            
+            <h3>El Modelo de Construcción de Prototipos</h3>
+            <p>La idea detrás de este modelo es el desarrollo de una implantación del sistema inicial, exponerla a los comentarios del usuario, refinarla en N versiones hasta que se desarrolle el sistema adecuado.
+            <p>Una ventaja de este modelo es que se obtiene una rápida realimentación del usuario, ya que las actividades de especificación, desarrollo y pruebas se ejecutan en cada iteración. </p>
+            <img src="img/model_prot.jpg" alt="Modelo de Construcción de Prototipos">
+            <p><strong>Identificar los requerimientos conocidos:</strong> Los analistas y los usuarios trabajan juntos para identificar los requerimientos conocidos que tienen que satisfacerse. Se debe: determinar los fines del sistema y el alcance de su capacidad.
+            <p><strong>Desarrollar modelo que funcione</strong> Los desarrolladores explican a los usuarios:
+            <p style="padding-left:25px;">
+            •	El método <br>
+            •	Las actividades a realizar <br>
+            •	La secuencia en que se llevará a cabo <br>
+            •	La responsabilidad de cada participante
+            </p>
+            <p>El proceso de construcción del prototipo se debe iniciar con el desarrollo de un plan general que permita conocer el proceso de desarrollo.
+            <p>Es importante definir un cronograma para el inicio y fin de la primera iteración.
+            <p>El desarrollador estima los costos asociados con el desarrollo del prototipo. 
+            <p>En el desarrollo del prototipo se preparan los siguientes componentes:
+            <p style="padding-left:25px;">
+            •	El lenguaje de diálogo o conversación entre el usuario y el sistema <br>
+            •	Pantallas y formatos para la entrada de datos <br>
+            •	Módulos esenciales de procesamiento
+            •	Salida del sistema 
+            </p>
+            <p>En esta fase no se prepara la documentación ni las especificaciones de salida o de diseño del software. 
+            <p><strong>Utilizar el prototipo:</strong> 
+            <p>La responsabilidad de trabajar con el prototipo y evaluar sus características y operación es del usuario.
+            <p>La experiencia con el sistema bajo condiciones reales permite determinar los cambios o mejoras o eliminar características innecesarias.
+            <p><strong>Revisar el prototipo:</strong> 
+            <p>Se realiza la evaluación y con la información obtenida se levantan las características que debe llevar la siguiente versión del prototipo.
+            <p>La evaluación permite profundizar los rasgos de los usuarios y los de la organización que tienen influencia sobre la aplicación y en su implementación.
+            <p>Los cambios en el prototipo son planificados con los usuarios antes de llevarlos a cabo por el analista.
+            <p><strong>¿Prototipo terminado?</strong>
+            <p>Los pasos anteriores se repiten varias veces (4 o 6 iteraciones) cuando los usuarios y desarrolladores están de acuerdo en que el sistema ha evolucionado lo suficiente e incluye todas las características necesarias. 
+            <p>Cuando el prototipo está terminado, el paso que sigue a continuación es tomar la decisión sobre cómo proceder, para lo cual existen cuatro opciones:</p>
+            <img src="img/proto_term.jpg" alt="Prototipo Terminado">
+            <p>Un prototipo puede tener alguna de las tres formas siguientes:</p>
+            <img src="img/proto_term2.jpg" alt="Formas Prototipo">
+            
+            <h3>El Modelo DRA (Desarrollo Rápido de Aplicaciones)</h3>
+            <p>Es un modelo de proceso de desarrollo del software que enfatiza en un ciclo de desarrollo corto.
+            <p>El proceso DRA permite al equipo de desarrollo crear un "sistema completamente funcional" dentro de periodos cortos de tiempo (de 60 a 90 días). El enfoque DRA comprende las siguientes fases:</p>
+            <img src="img/model_dra.jpg" alt="Modelo DRA">
+            <p><strong>Modelado de gestión:</strong> El flujo de información entre las funciones de gestión se modela de forma que responda a las siguientes preguntas: ¿Qué información conduce al proceso de gestión? ¿Qué información se genera? ¿Quién la genera? ¿A dónde va la información? ¿Quién la procesa?
+            <p><strong>Modelado de datos:</strong> Conjunto de objetos de datos necesarios para apoyar la empresa. Se definen las características (atributos) de cada uno de los objetos y las relaciones entre estos objetos.
+            <p><strong>Modelado del proceso:</strong> Los objetos de datos definidos en la fase de modelado de datos quedan transformados para lograr el flujo de información necesario para implementar una función de gestión. Las descripciones del proceso se crean para añadir, modificar, suprimir o recuperar un objeto de datos.
+            <p><strong>Generación de aplicaciones:</strong> El DRA asume la utilización de técnicas de cuarta generación. En lugar de crear software con lenguajes de programación de tercera generación, el proceso DRA trabaja para volver a utilizar componentes de programas ya existentes o crear componentes reutilizables.
+            <p><strong>Pruebas y Entrega:</strong> Como el proceso DRA enfatiza la reutilización, ya se han comprobado muchos de los componentes de los programas. Esto reduce tiempo de pruebas. Sin embargo, se deben probar todos los componentes nuevos y se deben ejercitar todas las interfaces a fondo.
+
+            <h3>Modelos de Procesos Evolutivos de Software</h3>
+            <p>Dentro de los modelos de procesos evolutivos, encontramos: El modelo Incremental y El Modelo en Espiral
+            <p><strong>El Modelo Incremental</strong>
+            <p>Es una combinación del Modelo de Cascada y Modelo Por Prototipos.
+            <p>Reduce el rehacer trabajo durante el proceso de desarrollo y da oportunidad para retrasar las decisiones hasta tener experiencia en el sistema.
+            <p>Durante el desarrollo de cada incremento se puede utilizar el modelo de cascada o prototipo, dependiendo del conocimiento que se tenga sobre los requisitos a implementar. Si se tiene un buen conocimiento, se puede optar por cascada, si es dudoso, prototipo.
+            <p>El modelo incremental se centra en la entrega de un producto operacional con cada incremento.
+            <p>Los primeros incrementos son versiones “incompletas” del producto final, pero proporcionan al usuario la funcionalidad necesaria para su evaluación.</p>
+            <img src="img/model_incremental.jpg" alt="Modelo Incremental">
+            <p><strong>El modelo espiral</strong></p>
+            <p>El ciclo de desarrollo se representa como una espiral, en lugar de una serie de actividades sucesivas con retrospectiva de una actividad a otra.
+            <p>Cada ciclo de desarrollo se divide en cuatro fases:
+            <p style="padding-left:25px;">
+            1. Definición de objetivos: Se definen los objetivos. Se definen las restricciones del proceso y del producto. Se realiza un diseño detallado del plan administrativo. Se identifican los riesgos y se elaboran estrategias alternativas dependiendo de estos. <br>
+            2. Evaluación y reducción de riesgos: Se realiza un análisis detallado de cada riesgo identificado. Pueden desarrollarse prototipos para disminuir el riesgo de requisitos dudosos. Se llevan a cabo los pasos para reducir los riesgos. <br>
+            3. Desarrollo y validación: Se escoge el modelo de desarrollo después de la evaluación del riesgo. El modelo que se utilizará (cascada, sistemas formales, evolutivo, etc.) depende del riesgo identificado para esa fase. <br>
+            4. Planificación: Se determina si continuar con otro ciclo. Se planea la siguiente fase del proyecto.</p> 
+            <p>Este modelo a diferencia de los otros, toma en consideración explícitamente el riesgo, esta es una actividad importante en la administración del proyecto.
+            <p>El ciclo de vida inicia con la definición de los objetivos. De acuerdo a las restricciones se determinan distintas alternativas. Se identifican los riesgos al sopesar los objetivos contra las alternativas. Se evalúan los riesgos con actividades como análisis detallado, simulación, prototipos, etc. Se desarrolla un poco el sistema. Se planifica la siguiente fase.
+            <p><strong>Actividades del modelo en espiral</strong>
+            <p><strong>Comunicación con el cliente:</strong>  Se establece comunicación entre el desarrollador y el cliente.
+            <p><strong>Planificación:</strong> Se definen los recursos, el tiempo y otra información relacionadas con el proyecto.
+            <p><strong>Análisis de riesgos:</strong> Se evalúan riesgos técnicos y de gestión
+            <p><strong>Ingeniería:</strong> Se construyen una o más representaciones de la aplicación.
+            <p><strong>Construcción y acción:</strong> Construir, probar, instalar y proporcionar soporte al usuario.
+            <p><strong>Evaluación del cliente:</strong> Se obtiene la reacción del cliente. Se realiza la evaluación de las representaciones del software creadas durante la etapa de ingeniería e implementada durante la etapa de instalación.</p>
+            <figure>
+                <img src="img/model_espiral1.jpg" alt="Modelo en Espiral" width="60%" hight="auto">
+                <figcaption>Imagen tomada de: http://1.bp.blogspot.com/_S5W0bf4uECM/TL5uOoqW4MI/AAAAAAAAABI/wk8pbHQALHU/s1600/espiral2.png</figcaption>
+            </figure>
+             <br> <br>
+            <img src="img/model_espiral2.jpg" alt="Modelo en Espiral">
+            <p> El equipo de ingeniería del software gira alrededor de la espiral en la dirección de las agujas del reloj, comenzando por el centro. 
+            <p> El primer circuito de la espiral puede producir el desarrollo de una especificación de productos; los pasos siguientes en la espiral se podrían utilizar para desarrollar un prototipo y progresivamente versiones más sofisticadas del software. Cada paso por la región de planificación produce ajustes en el plan del proyecto. El costo y la planificación se ajustan con la realimentación ante la evaluación del cliente. Además, el gestor del proyecto ajusta el número planificado de iteraciones requeridas para completar el software.
+            
+            <h3>Métodos Formales y Técnicas de Cuarta Generación</h3>
+            <p><strong>El modelo de Métodos Formales</strong>
+            <p>Comprende un conjunto de actividades que conducen a la especificación matemática del software de computadora. Los métodos formales permiten que un ingeniero de software especifique, desarrolle y verifique un sistema basado en computadora aplicando una notación rigurosa y matemática.
+            <p>Este enfoque es llamado <em>ingeniería del software de sala limpia.</em> 
+            <p>Cuando se utilizan métodos formales se descubren y corrigen ambigüedades, inconsistencias y errores. 
+            <p><strong>Técnicas de Cuarta Generación</strong>
+            <p>Abarca un conjunto de herramientas que facilitan al ingeniero del software la especificación de las características del software a alto nivel. 
+            <p>La herramienta genera automáticamente el código fuente basándose en la especificación del técnico. Cuanto mayor sea el nivel en el que se especifique el software, más rápido se puede construir el programa. 
+            <p>El paradigma T4G para la ingeniería del software se orienta hacia la posibilidad de especificar el software usando formas de lenguaje especializado o notaciones gráficas que describa el problema que hay que resolver en términos que los entienda el cliente.</p>
+            <img src="img/model_4g.jpg" alt="Métodos Formales y Técnicas de 4G"> <p>&nbsp;</p>           
+           
+        </section>
+            
+        <aside>
+            <div id="apDiv5">
+                <div id="apDiv11">Nuestra UNAD</div>
+            </div>
+            
+            <div id="apDiv6"><span style="text-align: justify;">
+                <iframe src='js/slider.html' width='260' height='180' frameborder='0'></iframe>    
+                </span>
+      		</div>
+           
+            <div id="apDiv7">
+                <div id="apDiv12">Ubicación Sede Nacional</div>
+      		</div>
+      		
+      		<div id="apDiv8">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15908.191419159031!2d-74.0975768!3d4.5854329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1c38a35fe03bf87!2sUNAD+UNIVERSIDAD+NACIONAL+ABIERTA+Sede+Jos%C3%A9+Celestino+Mutis!5e0!3m2!1ses!2sco!4v1475599261440" width="260" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>  
+            
+            <div id="apDiv16">Nuestra ECBTI</div>
+            <div id="apDiv18">
+                <iframe width="260" height="180" src="https://www.youtube.com/embed/Z-rfSPH3ZQA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </aside>
+        
+        <footer>
+            <div id="apDiv25">Para uso de la Universidad Nacional Abierta y a Distancia UNAD</div>
+            
+            <div id="apDiv26">Elaborado por: Luis Fernando Jaramillo Hernández, estudiante del programa Ing. de Sistemas </div>
+            
+            <div id="apDiv13"><img src="img/logoUNADgrisInferior.png" width="225" height="41"></div>
+            <div id="apDiv27">CEAD Dosquebradas - 2016</div>
+        </footer>
+   </div>
+    
+</body>
+<script src="js/modernizr.js"></script>   
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+</html>
