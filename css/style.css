@@ -566,7 +566,7 @@ background-image: url(../img/fondo2.png);
 background-repeat: no-repeat;
 background-size: cover;
 width: 700px;
-height: 680px;
+height: 670px;
 }
 
 .imgcap {
@@ -583,7 +583,7 @@ font-family: 'Indie Flower', cursive;
 font-size: 12px;
 box-shadow: inset 0px 0px 100px #003F5E;
 border-radius: 10px;
-margin: 20px 20px 20px 20px;
+margin: 10px 20px 20px 20px;
 }
 
 .jdcap2{	
@@ -594,7 +594,7 @@ font-family: 'Indie Flower', cursive;
 font-size: 12px;
 box-shadow: inset 0px 0px 100px #003F5E;
 border-radius: 10px;
-margin: 20px 20px 20px 20px;
+margin: 10px 20px 20px 20px;
 }
 
 .imglectura{
